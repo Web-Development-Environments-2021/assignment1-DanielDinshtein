@@ -44,7 +44,12 @@ section{
 
 p{
 	direction: rtl;
+	text-align: right;
+	padding: 20px;
+
 }
+
+
 
 
 
