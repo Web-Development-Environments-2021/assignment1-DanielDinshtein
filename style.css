@@ -16,5 +16,31 @@ a {
 
 h1{
 	text-align: center;
+	text-decoration: underline;
+	font-style: oblique;
+	
 }
+
+section{
+	font-family:Georgia, 'Times New Roman', Times, serif;
+	text-align: center;
+	font-size:150%;
+	font-weight: bold;
+	border-radius: 35px;
+	border-style:dotted;
+	border-color:black ;
+	margin: 10px;
+}
+
+#progile_pic{
+	border:double;
+	padding: 20px;
+	align-content: center;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	
+}
+
+
 
