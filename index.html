@@ -54,7 +54,11 @@ About Me
 <br/>
 my photos
 <br/>
-<br/>
+<p style="text-align: center;">
+  הוספתת לכם כמה תמונות שלי ושל משפחתי.
+  <br>
+  וכמובן איך אפשר בלי כמה תמונות של מאכלים מעשי ידי.
+</p>
 <br/>
 <br/>
 <!-- Slideshow container -->
@@ -76,6 +80,18 @@ my photos
   <div class="mySlides fade">
     <div class="numbertext">3 / 3</div>
     <img src="withgrand.jpeg" style="width:100%">
+    <div class="text">Caption Three</div>
+  </div>
+
+  <div class="mySlides fade">
+    <div class="numbertext">3 / 3</div>
+    <img src="withsons.jpeg" style="width:100%">
+    <div class="text">Caption Three</div>
+  </div>
+
+  <div class="mySlides fade">
+    <div class="numbertext">3 / 3</div>
+    <img src="withwife.jpeg" style="width:100%">
     <div class="text">Caption Three</div>
   </div>
 
@@ -151,37 +167,34 @@ contact me
 <br/>
 </section>
 
+<script>
+var slideIndex = 1;
+showSlides(slideIndex);
 
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
 
-  
-  <script>
-  var slideIndex = 1;
-  showSlides(slideIndex);
-  
-  function plusSlides(n) {
-    showSlides(slideIndex += n);
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";  
   }
-  
-  function currentSlide(n) {
-    showSlides(slideIndex = n);
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
   }
-  
-  function showSlides(n) {
-    var i;
-    var slides = document.getElementsByClassName("mySlides");
-    var dots = document.getElementsByClassName("dot");
-    if (n > slides.length) {slideIndex = 1}    
-    if (n < 1) {slideIndex = slides.length}
-    for (i = 0; i < slides.length; i++) {
-        slides[i].style.display = "none";  
-    }
-    for (i = 0; i < dots.length; i++) {
-        dots[i].className = dots[i].className.replace(" active", "");
-    }
-    slides[slideIndex-1].style.display = "block";  
-    dots[slideIndex-1].className += " active";
-  }
-  </script>
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+}
+</script>
 
 
 <script type="text/javascript">
@@ -197,5 +210,6 @@ $(function(){
     $('#menu').toggle($(this).scrollTop()>1000)
  });​
  </script>
+
 </body>
 </html>
