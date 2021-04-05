@@ -1,12 +1,24 @@
-#menu
+body {
+  padding:0;
+  margin: 0;
+  direction: rtl;
+}
+
+nav
 {
 	position: fixed;
+  top:0;
 	width: 100%;
-	height: 72px;
+	min-height: 52px;
 	background: #5995df;
 	text-align: center;
 	font-size: 130%;
+  padding: 10px 0;
+  z-index: 999;
+}
 
+nav a {
+  white-space: nowrap;
 }
 
 a {
@@ -15,13 +27,12 @@ a {
 }
 
 h1{
-	text-align: center;
-	text-decoration: underline;
-	font-style: oblique;
-	
+  text-align: center;
+  text-decoration: underline;
+  font-style: oblique;
 }
 
-section{
+section {
 	font-family:Georgia, 'Times New Roman', Times, serif;
 	text-align: center;
 	font-size:150%;
@@ -30,6 +41,16 @@ section{
 	border-style:dotted;
 	border-color:black ;
 	margin: 10px;
+  padding: 30px 0;
+}
+
+section.no-border {
+  border: none;
+}
+
+nav + section {
+  margin-top: 72px;
+  padding: 0;
 }
 
 #progile_pic{
@@ -39,7 +60,6 @@ section{
 	display: block;
 	margin-left: auto;
 	margin-right: auto;
-	
 }
 
 p{
@@ -111,8 +131,6 @@ ol{
   color: #009879;
 }
 
-
-
 /* Tooltip container */
 .tooltip {
   position: relative;
@@ -165,8 +183,6 @@ ol{
 
 /* Slideshow container */
 .slideshow-container {
-  width: 300px;
-  height: 300px;
   position:static;
   margin: auto;
 }
@@ -174,6 +190,11 @@ ol{
 /* Hide the images by default */
 .mySlides {
   display: none;
+}
+
+.mySlides img {
+  max-height: 300px;
+  width: auto;
 }
 
 /* Next & previous buttons */
@@ -242,7 +263,75 @@ ol{
   to {opacity: 1}
 }
 
+form {
+  padding: 10px;
+  max-width: 500px;
+  margin: auto;
+}
 
+input {
+  width: 100%;
+  height: 40px;
+  padding: 10px;
+  border-radius: 5px;
+  border-width: 1px;
+  font-size: 18px;
+}
 
+form textarea {
+  width: 100%;
+  height: 200px;
+  border-radius: 5px;
+  padding: 10px;
+  font-size: 18px;
+}
 
+form input[name="email"] {
+  direction: ltr;
+}
 
+form textarea[name="body"] {
+  display: none;
+}
+
+.emoji-container {
+  margin: 10px 0;
+}
+.emoji-container button {
+  border: none;
+  background: none;
+  cursor: pointer;
+  outline: 0;
+}
+
+.top-container {
+  position: fixed;
+  left: 40px;
+  bottom: 40px;
+  height: 60px;
+  width: 60px;
+  border-radius: 100%;
+  background-color: #FFFFFF;
+  text-align: center;
+  cursor: pointer;
+  z-index: 999;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.top-container svg {
+  border: none;
+  background: none;
+  outline: 0;
+  cursor: pointer;
+  height: 30px;
+  fill:#000000;
+}
+
+.top-container:hover {
+  background-color: #5995df;
+}
+.top-container:hover svg {
+  fill:#FFFFFF;
+}
