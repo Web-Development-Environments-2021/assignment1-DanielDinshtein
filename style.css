@@ -304,11 +304,6 @@ form input[name="email"] {
   direction: ltr;
 }
 
-form textarea[name="body"] {
-  display: none;
-}
-
-
 /* emoji-container */
 
 .emoji-container {
