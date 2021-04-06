@@ -4,6 +4,8 @@ body {
   direction: rtl;
 }
 
+/* Navigator */
+
 nav
 {
 	position: fixed;
@@ -26,11 +28,15 @@ a {
 	color: white;
 }
 
+/* HeadLine */
+
 h1{
   text-align: center;
   text-decoration: underline;
   font-style: oblique;
 }
+
+/* Section */
 
 section {
 	font-family:Georgia, 'Times New Roman', Times, serif;
@@ -62,6 +68,8 @@ nav + section {
 	margin-right: auto;
 }
 
+/* Paragraph */
+
 p{
 	direction: rtl;
 	text-align: right;
@@ -74,12 +82,16 @@ a:hover{
 	color:blue
 }
 
+/* Ordered List */
+
 ol{
   direction: rtl;
   text-align: right;
   font-weight: normal;
   text-indent: 0.15cm;
 }
+
+/* Table */
 
 .styled-table {
   border-collapse: collapse;
@@ -132,13 +144,14 @@ ol{
 }
 
 /* Tooltip container */
+
+
 .tooltip {
   position: relative;
   display: inline-block;
 
 }
 
-/* Tooltip text */
 .tooltip .tooltiptext {
   visibility: hidden;
   width: 120px;
@@ -148,19 +161,19 @@ ol{
   padding: 5px 0;
   border-radius: 6px;
 
-  /* Position the tooltip text */
+
   position: absolute;
   z-index: 1;
   bottom: 125%;
   left: 50%;
   margin-left: -60px;
 
-  /* Fade in tooltip */
+
   opacity: 0;
   transition: opacity 0.3s;
 }
 
-/* Tooltip arrow */
+
 .tooltip .tooltiptext::after {
   content: "";
   position: absolute;
@@ -172,22 +185,23 @@ ol{
   border-color: #555 transparent transparent transparent;
 }
 
-/* Show the tooltip text when you mouse over the tooltip container */
 .tooltip:hover .tooltiptext {
   visibility: visible;
   opacity: 1;
 }
 
 
+/* Slideshow container */
+
 * {box-sizing:border-box}
 
-/* Slideshow container */
+
 .slideshow-container {
   position:static;
   margin: auto;
 }
 
-/* Hide the images by default */
+
 .mySlides {
   display: none;
 }
@@ -197,7 +211,7 @@ ol{
   width: auto;
 }
 
-/* Next & previous buttons */
+
 .prev, .next {
   cursor: pointer;
   position:center;
@@ -213,18 +227,17 @@ ol{
   user-select: none;
 }
 
-/* Position the "next button" to the right */
 .next {
   right: 0;
   border-radius: 3px 0 0 3px;
 }
 
-/* On hover, add a black background color with a little bit see-through */
+
 .prev:hover, .next:hover {
   background-color: white;
 }
 
-/* Caption text */
+
 .text {
   color: #f2f2f2;
   font-size: 15px;
@@ -235,7 +248,7 @@ ol{
   text-align: center;
 }
 
-/* Number text (1/3 etc) */
+
 .numbertext {
   color: #f2f2f2;
   font-size: 12px;
@@ -244,8 +257,6 @@ ol{
   top: 0;
 }
 
-
-/* Fading animation */
 .fade {
   -webkit-animation-name: fade;
   -webkit-animation-duration: 1.5s;
@@ -262,6 +273,9 @@ ol{
   from {opacity: .4}
   to {opacity: 1}
 }
+
+
+/* Form */
 
 form {
   padding: 10px;
@@ -294,6 +308,9 @@ form textarea[name="body"] {
   display: none;
 }
 
+
+/* emoji-container */
+
 .emoji-container {
   margin: 10px 0;
 }
@@ -303,6 +320,11 @@ form textarea[name="body"] {
   cursor: pointer;
   outline: 0;
 }
+
+
+
+/* top-container */
+
 
 .top-container {
   position: fixed;
