@@ -304,6 +304,10 @@ form input[name="email"] {
   direction: ltr;
 }
 
+form input[type="submit"]:hover{
+  cursor: pointer;
+}
+
 /* emoji-container */
 
 .emoji-container {
